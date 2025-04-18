@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stlesheet" href="index.css" />
+  <title>HTML5 Elements Example</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the HTML5 Demo Page</h1>
+    <p>This page demonstrates HTML5 features including multimedia, lists, tables, and forms.</p>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>My Favorite Destinations</h2>
+    <ol type="I" class="roman-list" >
+      <li>Paris</li>
+      <li>Rome</li>
+      <li>New York</li>
+      <li>Tokyo</li>
+      <li>London</li>
+    </ol>
+  </section>
+
+  <!-- External Image -->
+  <section>
+    <h2>Beautiful Landscape</h2>
+    <img 
+      src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" 
+      alt="Landscape from Pexels" 
+      width="600"
+    />
+  </section>
+
+  <!-- Contacts Table -->
+  <section>
+    <h2>Contact List</h2>
+    <table id="contact-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>Nairobi, Kenya</td>
+          <td>+254700123456</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>Kisumu, Kenya</td>
+          <td>+254712345678</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary Johnson</td>
+          <td>Mombasa, Kenya</td>
+          <td>+254701234567</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>Peter Otieno</td>
+          <td>Eldoret, Kenya</td>
+          <td>+254733112233</td>
+          <td>peter@example.com</td>
+        </tr>
+        <tr>
+          <td>Amina Hassan</td>
+          <td>Machakos, Kenya</td>
+          <td>+254745667788</td>
+          <td>amina@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>User Registration</h2>
+    <form action="#" method="POST">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br/><br/>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="e.g. user@example.com" required /><br/><br/>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required /><br/><br/>
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br/><br/>
+
+      <!-- Gender (Radio Buttons) -->
+      <p>Gender:</p>
+      <label><input type="radio" name="gender" value="male" required /> Male</label><br/>
+      <label><input type="radio" name="gender" value="female" /> Female</label><br/>
+      <label><input type="radio" name="gender" value="other" /> Other</label><br/><br/>
+
+      <!-- Interests (Checkboxes) -->
+      <p>Interests:</p>
+      <label><input type="checkbox" name="interests" value="music" /> Music</label><br/>
+      <label><input type="checkbox" name="interests" value="travel" /> Travel</label><br/>
+      <label><input type="checkbox" name="interests" value="sports" /> Sports</label><br/><br/>
+
+      <!-- Country (Dropdown) -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select><br/><br/>
+
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <!-- Multimedia: Audio and Video -->
+  <section>
+    <h2>Multimedia</h2>
+
+    <!-- Audio Player -->
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Player -->
+    <h3>Sample Video</h3>
+    <video width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 HTML5 Demo Page</p>
+  </footer>
+
+</body>
+</html>
